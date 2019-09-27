@@ -1,0 +1,21 @@
+{
+  "name": "img-to-ascii",
+  "version": "1.0.0",
+  "description": "change normal image to ascii image",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "ZeroCho",
+  "license": "MIT",
+  "dependencies": {
+    "array.prototype.flat": "^1.2.1",
+    "image-output": "^2.4.0",
+    "image-pixels": "^2.2.2",
+    "ndarray": "^1.0.18",
+    "pngjs": "^3.4.0",
+    "quantize": "^1.0.2",
+    "save-pixels": "^2.3.4",
+    "zeros": "^1.0.0"
+  }
+}
