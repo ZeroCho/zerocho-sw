@@ -10,7 +10,8 @@
   "license": "MIT",
   "dependencies": {
     "array.prototype.flat": "^1.2.1",
-    "image-output": "^2.4.0",
+    "image-encode": "^1.3.0",
+    "image-output": "^2.4.1",
     "image-pixels": "^2.2.2",
     "ndarray": "^1.0.18",
     "pngjs": "^3.4.0",
