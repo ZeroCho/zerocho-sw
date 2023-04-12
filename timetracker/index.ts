@@ -46,7 +46,46 @@ let keyboardHoldingSec = 0;
       return console.log('컴퓨터 쉬는 중...');
     }
     const result = await activeWindow();
+    console.log(result);
     if (result?.owner.name) {
+      if (result.owner.name === 'Google Chrome') {
+        if (result.title.includes("Stack Overflow")) {
+          if (!acc["Stack Overflow"]) {
+            acc["Stack Overflow"] = 0;
+          }
+          acc["Stack Overflow"] += 1;
+        } else if (result.title.includes("Gmail")) {
+          if (!acc["Gmail"]) {
+            acc["Gmail"] = 0;
+          }
+          acc["Gmail"] += 1;
+        } else if (result.title.includes("GitHub")) {
+          if (!acc["GitHub"]) {
+            acc["GitHub"] = 0;
+          }
+          acc["GitHub"] += 1;
+        } else if (result.title.includes("TypeScript")) {
+          if (!acc["TypeScript"]) {
+            acc["TypeScript"] = 0;
+          }
+          acc["TypeScript"] += 1;
+        } else if (result.title.includes("MDN")) {
+          if (!acc["MDN"]) {
+            acc["MDN"] = 0;
+          }
+          acc["MDN"] += 1;
+        } else if (result.title.includes("인프런")) {
+          if (!acc["인프런"]) {
+            acc["인프런"] = 0;
+          }
+          acc["인프런"] += 1;
+        } else if (result.title.includes("npm")) {
+          if (!acc["npm"]) {
+            acc["npm"] = 0;
+          }
+          acc["npm"] += 1;
+        }
+      }
       if (acc[result.owner.name]) {
         acc[result.owner.name] += 1;
       } else {
