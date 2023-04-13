@@ -7,8 +7,8 @@ const today = new Date();
     const data = await fs.readFile(
       path.join('data', `${today.getFullYear()}.${today.getMonth() + 1}.${today.getDate()}.txt`),
     );
-    console.log(data.toString());
     const json = JSON.parse(data.toString());
+    console.log(json);
   } catch (err) {
     console.error(err);
   }
