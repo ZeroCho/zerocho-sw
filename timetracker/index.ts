@@ -34,6 +34,8 @@ let keyboardHoldingSec = 0;
     console.log('기존 파일 없음', err);
   }
   setInterval(async () => {
+    const today = new Date();
+    const todayString = `${today.getFullYear()}.${today.getMonth() + 1}.${today.getDate()}`;
     keyboardHoldingSec += 1;
     const currentMousePos = robot.getMousePos();
     if (prevMousePos.x === currentMousePos.x && prevMousePos.y === currentMousePos.y) {
